@@ -1,0 +1,95 @@
+.booking-container {
+  padding: 20px;
+  max-width: 1100px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.show-id {
+  background: #f1f1f1;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.layout {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.seat-section {
+  flex: 2;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.seat {
+  padding: 14px;
+  text-align: center;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 1px solid #444;
+}
+
+.seat.selected {
+  outline: 3px solid #000;
+}
+
+.AVAILABLE {
+  background: #d4edda;
+}
+
+.HELD {
+  background: #fff3cd;
+}
+
+.BOOKED {
+  background: #f8d7da;
+  cursor: not-allowed;
+}
+
+.legend span {
+  margin-right: 15px;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.action-panel {
+  flex: 1;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.action-panel input {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+}
+
+.action-panel button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.action-panel .cancel {
+  background: #ccc;
+}
+
+.message {
+  margin-top: 10px;
+  color: green;
+}
